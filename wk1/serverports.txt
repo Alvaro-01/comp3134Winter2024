@@ -1,0 +1,18 @@
+- What is the definition of server port?
+A server port is a logical endpoint of a network connection that is used to exchange 
+information between a web server and a web client
+- What is server port range?
+0 to 65535
+- How many bits does number above represent?
+16
+- State 10 common server ports
+20 (data)
+21(control)
+8080 (web servers)
+3000 (web development)
+53 (DNS)
+25 (email)
+443 (https)
+3306 (sql)
+80 (http)
+389 (LDAP)
