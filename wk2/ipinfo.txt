@@ -1,0 +1,5 @@
+Amazon.com: 52.94.236.248 United States of America
+Netflix.com: 44.234.232.238 United States of America
+Microsoft.com: 20.70.246.20 United States of America
+Youtube.com: 172.217.164.110 United States of America
+Costco.com: 23.37.17.233 United States of America

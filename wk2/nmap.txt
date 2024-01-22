@@ -1,0 +1,56 @@
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# nmap Amazon.com
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-01-22 02:40 UTC
+Nmap scan report for Amazon.com (54.239.28.85)
+Host is up (0.021s latency).
+Other addresses for Amazon.com (not scanned): 205.251.242.103 52.94.236.248
+Not shown: 997 closed tcp ports (reset)
+PORT    STATE    SERVICE
+25/tcp  filtered smtp
+80/tcp  open     http
+443/tcp open     https
+
+Nmap done: 1 IP address (1 host up) scanned in 12.55 seconds
+
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -p 44.234.232.238 Netflix.com
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-01-22 02:41 UTC
+Error #487: Your port specifications are illegal.  Example of proper form: "-100,200-1024,T:3000-4000,U:60000-"
+QUITTING!
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -p 44 Netflix.com
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-01-22 02:42 UTC
+Nmap scan report for Netflix.com (54.160.93.182)
+Host is up (0.021s latency).
+Other addresses for Netflix.com (not scanned): 3.211.157.115 3.225.92.8 2600:1f18:631e:2f80:77e5:13a7:6533:7584 2600:1f18:631e:2f84:ceae:e049:1e:6a96 2600:1f18:631e:2f82:c8cd:27b2:ac:8dbf
+rDNS record for 54.160.93.182: ec2-54-160-93-182.compute-1.amazonaws.com
+
+PORT   STATE    SERVICE
+44/tcp filtered mpm-flags
+
+Nmap done: 1 IP address (1 host up) scanned in 0.37 seconds
+
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -p 50-100 Youtube.com
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-01-22 02:44 UTC
+Nmap scan report for Youtube.com (142.251.41.46)
+Host is up (0.0017s latency).
+Other addresses for Youtube.com (not scanned): 2607:f8b0:400b:807::200e
+rDNS record for 142.251.41.46: yyz12s08-in-f14.1e100.net
+Not shown: 50 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+80/tcp open  http
+
+Nmap done: 1 IP address (1 host up) scanned in 1.65 seconds
+
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# nmap -F Costco.com
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-01-22 02:45 UTC
+Nmap scan report for Costco.com (23.197.34.98)
+Host is up (0.013s latency).
+rDNS record for 23.197.34.98: a23-197-34-98.deploy.static.akamaitechnologies.com
+Not shown: 98 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 2.26 seconds
+
+
+
+
