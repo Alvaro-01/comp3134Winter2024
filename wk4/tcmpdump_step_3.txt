@@ -1,0 +1,27 @@
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# tcpdump -A -i eth0
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+00:55:50.054260 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 544213644:544213752, ack 3861923693, win 501, length 108
+E.....@.@..sD...c.5I.... p
+..0GmP....P..x.$ *.70...4....j\C5.9......r..$.....u....[....UwxE....m.....o......Ub.j(....a..jU...G|+.'...".........DL.7.
+00:55:50.054413 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 108:196, ack 1, win 501, length 88
+E.....@.@...D...c.5I.... p
+..0GmP....<..7I....-....\E.c.Ru..PY...v..I+p_..k..CT.$..L.vvj'ea.....t<...,9V.:..%>e.{t......(Z..,
+..
+00:55:50.054483 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 196:264, ack 1, win 501, length 68
+E..l..@.@...D...c.5I.... p.P.0GmP....(..J@..F....,.....Fz.;.p5.}.g.../.`xON...l]vJa..8.m......-.0$.05,..C...
+00:55:50.054546 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 264:332, ack 1, win 501, length 68
+E..l..@.@...D...c.5I.... p...0GmP....(...,.....,.`..$.^....4...<.>@L.\......t...+......x..M........"../.n.x.
+00:55:50.054612 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 332:368, ack 1, win 501, length 36
+E..L..@.@...D...c.5I.... p...0GmP............^.,!J.~...yX.o.jv....7....#.:m.
+00:55:50.065648 IP cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 108, win 8210, length 0
+E..(..@.y.O.c.5ID........0Gm p
+.P. .......
+00:55:50.067864 IP cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 264, win 8209, length 0
+E..(..@.y.O.c.5ID........0Gm p..P. ..h....
+00:55:50.067864 IP cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 368, win 8209, length 0
+E..(..@.y.O.c.5ID........0Gm p..P. .......
+^C
+8 packets captured
+38 packets received by filter
+0 packets dropped by kernel

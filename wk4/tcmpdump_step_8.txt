@@ -1,0 +1,16 @@
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# tcpdump -n -i eth0
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+01:00:39.209043 IP 68.183.193.220.22 > 99.237.53.73.59352: Flags [P.], seq 547915148:547915256, ack 3861928813, win 501, length 108
+01:00:39.209173 IP 68.183.193.220.22 > 99.237.53.73.59352: Flags [P.], seq 108:144, ack 1, win 501, length 36
+01:00:39.209248 IP 68.183.193.220.22 > 99.237.53.73.59352: Flags [P.], seq 144:196, ack 1, win 501, length 52
+01:00:39.209304 IP 68.183.193.220.22 > 99.237.53.73.59352: Flags [P.], seq 196:264, ack 1, win 501, length 68
+01:00:39.209367 IP 68.183.193.220.22 > 99.237.53.73.59352: Flags [P.], seq 264:332, ack 1, win 501, length 68
+01:00:39.209447 IP 68.183.193.220.22 > 99.237.53.73.59352: Flags [P.], seq 332:368, ack 1, win 501, length 36
+01:00:39.222980 IP 99.237.53.73.59352 > 68.183.193.220.22: Flags [.], ack 108, win 8210, length 0
+01:00:39.233872 IP 99.237.53.73.59352 > 68.183.193.220.22: Flags [.], ack 196, win 8210, length 0
+01:00:39.233873 IP 99.237.53.73.59352 > 68.183.193.220.22: Flags [.], ack 332, win 8210, length 0
+01:00:39.268437 IP 99.237.53.73.59352 > 68.183.193.220.22: Flags [.], ack 368, win 8209, length 0
+10 packets captured
+35 packets received by filter
+0 packets dropped by kernel

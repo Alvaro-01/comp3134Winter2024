@@ -1,0 +1,26 @@
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# tcpdump -r 0001.pcap
+reading from file 0001.pcap, link-type EN10MB (Ethernet), snapshot length 262144
+00:58:32.127028 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 547806448:547806492, ack 3861927037, win 501, length 44
+00:58:32.127166 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 44:96, ack 1, win 501, length 52
+00:58:32.127240 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 96:164, ack 1, win 501, length 68
+00:58:32.127352 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 164:232, ack 1, win 501, length 68
+00:58:32.127412 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 232:268, ack 1, win 501, length 36
+00:58:32.146040 IP cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 44, win 8210, length 0
+00:58:32.146040 IP cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 164, win 8209, length 0
+00:58:32.146040 IP cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 268, win 8209, length 0
+00:58:33.227863 IP 218.92.0.33.44996 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [S], seq 333431265, win 29200, options [mss 1460,sackOK,TS val 1811698585 ecr 0,nop,wscale 7], length 0
+00:58:33.227930 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > 218.92.0.33.44996: Flags [S.], seq 3664589590, ack 333431266, win 65160, options [mss 1460,sackOK,TS val 982822461 ecr 1811698585,nop,wscale 7], length 0
+00:58:33.441583 IP 218.92.0.33.44996 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 1, win 229, options [nop,nop,TS val 1811698638 ecr 982822461], length 0
+00:58:33.441584 IP 218.92.0.33.44996 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [P.], seq 1:16, ack 1, win 229, options [nop,nop,TS val 1811698638 ecr 982822461], length 15: SSH: SSH-2.0-PuTTY
+00:58:33.441670 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > 218.92.0.33.44996: Flags [.], ack 16, win 509, options [nop,nop,TS val 982822675 ecr 1811698638], length 0
+00:58:33.443467 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > 218.92.0.33.44996: Flags [P.], seq 1:42, ack 16, win 509, options [nop,nop,TS val 982822677 ecr 1811698638], length 41: SSH: SSH-2.0-OpenSSH_9.3p1 Ubuntu-1ubuntu3.2
+00:58:33.656869 IP 218.92.0.33.44996 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 42, win 229, options [nop,nop,TS val 1811698692 ecr 982822677], length 0
+00:58:33.656930 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > 218.92.0.33.44996: Flags [P.], seq 42:1154, ack 16, win 509, options [nop,nop,TS val 982822890 ecr 1811698692], length 1112
+00:58:33.656957 IP 218.92.0.33.44996 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [P.], seq 16:688, ack 42, win 229, options [nop,nop,TS val 1811698692 ecr 982822677], length 672
+00:58:33.659589 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > 218.92.0.33.44996: Flags [F.], seq 1154, ack 688, win 504, options [nop,nop,TS val 982822893 ecr 1811698692], length 0
+00:58:33.870760 IP 218.92.0.33.44996 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [P.], seq 688:712, ack 1154, win 246, options [nop,nop,TS val 1811698746 ecr 982822890], length 24
+00:58:33.870761 IP 218.92.0.33.44996 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [R.], seq 712, ack 1154, win 246, options [nop,nop,TS val 1811698746 ecr 982822890], length 0
+00:58:33.870845 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > 218.92.0.33.44996: Flags [R], seq 3664590744, win 0, length 0
+00:58:33.879488 IP 218.92.0.33.44996 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [R], seq 333431953, win 0, length 0
+00:58:46.530510 IP 155.211.203.35.bc.googleusercontent.com.50139 > ubuntu-s-1vcpu-1gb-tor1-01.47131: Flags [S], seq 3230397866, win 65535, options [mss 1460], length 0
+00:58:46.530556 IP ubuntu-s-1vcpu-1gb-tor1-01.47131 > 155.211.203.35.bc.googleusercontent.com.50139: Flags [R.], seq 0, ack 3230397867, win 0, length 0

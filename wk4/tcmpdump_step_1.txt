@@ -1,0 +1,21 @@
+root@ubuntu-s-1vcpu-1gb-tor1-01:~# tcpdump -i eth0
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+00:08:26.715211 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 489912396:489912504, ack 3861897961, win 501, length 108
+00:08:26.715370 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 108:144, ack 1, win 501, length 36
+00:08:26.715456 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 144:196, ack 1, win 501, length 52
+00:08:26.715539 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 196:264, ack 1, win 501, length 68
+00:08:26.715613 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 264:332, ack 1, win 501, length 68
+00:08:26.715679 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 332:368, ack 1, win 501, length 36
+00:08:26.729165 IP cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 108, win 1022, length 0
+00:08:26.729166 IP cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 196, win 1022, length 0
+00:08:26.729166 IP cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 332, win 1022, length 0
+00:08:26.772270 IP cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 368, win 1021, length 0
+00:08:26.804784 IP ubuntu-s-1vcpu-1gb-tor1-01.33575 > 67.207.67.2.domain: 56720+ [1au] PTR? 73.53.237.99.in-addr.arpa. (54)
+00:08:26.804882 IP ubuntu-s-1vcpu-1gb-tor1-01.57155 > 67.207.67.2.domain: 60509+ [1au] PTR? 73.53.237.99.in-addr.arpa. (54)
+00:08:26.810236 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-tor1-01.33575: 56720 1/0/1 PTR cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com. (123)
+00:08:26.810300 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-tor1-01.57155: 60509 1/0/1 PTR cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com. (123)
+00:08:26.810995 IP ubuntu-s-1vcpu-1gb-tor1-01.54285 > 67.207.67.2.domain: 54327+ [1au] PTR? 220.193.183.68.in-addr.arpa. (56)
+00:08:26.827731 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-tor1-01.54285: 54327 NXDomain 0/1/1 (123)
+00:08:26.827899 IP ubuntu-s-1vcpu-1gb-tor1-01.54285 > 67.207.67.2.domain: 54327+ PTR? 220.193.183.68.in-addr.arpa. (45)
+00:08:26.828548 IP 67.207.67.2.domain > ubuntu-s-1vcpu-1gb-tor1-01.54285: 54327 NXDomain 0/1/0 (112)

@@ -1,0 +1,55 @@
+root@ubuntu-s-1vcpu-1gb-tor1-01:~#  tcpdump -XX -i eth0
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+00:57:51.651106 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 547797036:547797144, ack 3861926889, win 501, length 108
+        0x0000:  fe00 0000 0101 aa44 9e6f 2b34 0800 4510  .......D.o+4..E.
+        0x0010:  0094 c004 4000 4006 da85 44b7 c1dc 63ed  ....@.@...D...c.
+        0x0020:  3549 0016 e7d8 20a6 b82c e630 53e9 5018  5I.......,.0S.P.
+        0x0030:  01f5 a050 0000 c0d4 4cd3 d824 7792 2e26  ...P....L..$w..&
+        0x0040:  e881 6887 8bbb b8b4 3901 ab6d 38db 3d31  ..h.....9..m8.=1
+        0x0050:  5286 cfad 84de 1ae4 2a75 7560 d362 d891  R.......*uu`.b..
+        0x0060:  dc05 d484 0e0e 6284 1675 dfec e242 9819  ......b..u...B..
+        0x0070:  f64e 1c1d 826d c90f bafe a168 485a 2b26  .N...m.....hHZ+&
+        0x0080:  2ba8 9144 3c64 610c 4a32 c337 3f88 a7ee  +..D<da.J2.7?...
+        0x0090:  cae9 0fbe 5b71 088b 40da 0c0a c2b8 4ae4  ....[q..@.....J.
+        0x00a0:  e866                                     .f
+00:57:51.651332 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 108:264, ack 1, win 501, length 156
+        0x0000:  fe00 0000 0101 aa44 9e6f 2b34 0800 4510  .......D.o+4..E.
+        0x0010:  00c4 c005 4000 4006 da54 44b7 c1dc 63ed  ....@.@..TD...c.
+        0x0020:  3549 0016 e7d8 20a6 b898 e630 53e9 5018  5I.........0S.P.
+        0x0030:  01f5 a080 0000 3e60 1ac7 c91d 9951 46b0  ......>`.....QF.
+        0x0040:  b177 27aa 27a2 16c2 9943 1f9e 42c4 a307  .w'.'....C..B...
+        0x0050:  dde9 af3a 13c9 dfc1 01fe e5e9 30e4 e98a  ...:........0...
+        0x0060:  a2df 39aa 2a1b 6645 7739 49f1 b32d 18d8  ..9.*.fEw9I..-..
+        0x0070:  9137 0e40 41f3 76ea 965e 9a8b f692 533f  .7.@A.v..^....S?
+        0x0080:  f6c0 89d7 1247 c203 07b0 62a0 dc1e 04e1  .....G....b.....
+        0x0090:  b2f7 9145 81f9 89c4 323b bba0 9978 aa3d  ...E....2;...x.=
+        0x00a0:  7326 a1c3 fc59 bebb 2f78 1d2b af4a 873c  s&...Y../x.+.J.<
+        0x00b0:  e736 2a08 e5c7 64f5 60e1 5542 502e 73f0  .6*...d.`.UBP.s.
+        0x00c0:  ff9c 2a71 4ab7 5a2f 80de 8a18 1654 320f  ..*qJ.Z/.....T2.
+        0x00d0:  8f74                                     .t
+00:57:51.651671 IP ubuntu-s-1vcpu-1gb-tor1-01.ssh > cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352: Flags [P.], seq 264:368, ack 1, win 501, length 104
+        0x0000:  fe00 0000 0101 aa44 9e6f 2b34 0800 4510  .......D.o+4..E.
+        0x0010:  0090 c006 4000 4006 da87 44b7 c1dc 63ed  ....@.@...D...c.
+        0x0020:  3549 0016 e7d8 20a6 b934 e630 53e9 5018  5I.......4.0S.P.
+        0x0030:  01f5 a04c 0000 2a07 1704 17af 5e5b bc9f  ...L..*.....^[..
+        0x0040:  3f65 7c3e 9887 3a9f 3f13 629b 925d fd4e  ?e|>..:.?.b..].N
+        0x0050:  8f83 83e1 b635 8f98 8c1f dfec 7b6e 7e3c  .....5......{n~<
+        0x0060:  53f3 e3de 75e5 1413 11ac e867 0183 7ed5  S...u......g..~.
+        0x0070:  8210 81a5 88db cc8c 5d91 8675 c133 8c2b  ........]..u.3.+
+        0x0080:  9121 b057 1144 f16f 39b2 97c6 191a e4e2  .!.W.D.o9.......
+        0x0090:  6d9f 24c4 34a6 3059 5e0f 5e74 fc72       m.$.4.0Y^.^t.r
+00:57:51.665324 IP cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 108, win 8208, length 0
+        0x0000:  aa44 9e6f 2b34 fe00 0000 0101 0800 4500  .D.o+4........E.
+        0x0010:  0028 1d7d 4000 7906 4489 63ed 3549 44b7  .(.}@.y.D.c.5ID.
+        0x0020:  c1dc e7d8 0016 e630 53e9 20a6 b898 5010  .......0S.....P.
+        0x0030:  2010 f4b2 0000 0000                      ........
+00:57:51.665324 IP cpe00fc8d502993-cm00fc8d502990.cpe.net.cable.rogers.com.59352 > ubuntu-s-1vcpu-1gb-tor1-01.ssh: Flags [.], ack 368, win 8207, length 0
+        0x0000:  aa44 9e6f 2b34 fe00 0000 0101 0800 4500  .D.o+4........E.
+        0x0010:  0028 1d7e 4000 7906 4488 63ed 3549 44b7  .(.~@.y.D.c.5ID.
+        0x0020:  c1dc e7d8 0016 e630 53e9 20a6 b99c 5010  .......0S.....P.
+        0x0030:  200f f3af 0000 0000                      ........
+^C
+5 packets captured
+34 packets received by filter
+0 packets dropped by kernel
