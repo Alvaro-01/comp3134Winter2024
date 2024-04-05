@@ -1,0 +1,5 @@
+- Error:
+I got an error because the file or directory was not found in the server 
+
+- Sensitive info:
+this page was giving the file path

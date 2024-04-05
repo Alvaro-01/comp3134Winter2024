@@ -1,0 +1,5 @@
+Mitigating the Issue:
+
+Convert all HTML comments (<!-- ... -->) to PHP comments (// ...) within the PHP script.
+PHP comments are not visible in the rendered HTML source code, 
+as they are processed and removed during server-side execution.

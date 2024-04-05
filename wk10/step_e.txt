@@ -1,0 +1,11 @@
+Steps to Mitigate:
+Viewing Files and Folders Before HTML Directory:
+
+Use realpath() to resolve the full path.
+Check if the resolved path is within the allowed base directory.
+Preventing Access to Nonexistent Folders:
+
+Use file_exists() to verify if the resolved path exists before proceeding.
+Disallow Passing a Filename Directly (Bonus):
+
+Check for the presence of a dot (.) in the parameter value to avoid directly passing filenames.
