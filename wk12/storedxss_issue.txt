@@ -1,0 +1,2 @@
+The content of storedxss.txt is directly executed without proper sanitization, 
+allowing malicious scripts to be stored and executed.
