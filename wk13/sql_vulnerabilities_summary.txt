@@ -1,0 +1,15 @@
+Scenario 1: Input Ben
+Input: Typing Ben into the form.
+Observation: The script will execute a query to search for users whose first name is exactly Ben and are active (active = 1).
+Outcome: Any users with the first name Ben and active = 1, 
+those user details will be displayed in the table.
+
+Scenario 2: Input Ben'--
+Observation: The script will execute a query with the input string Ben'--, 
+effectively commenting out the rest of the SQL query.
+Outcome: The SQL query ignores everything after the single quote (') and two dashes (--), potentially returning all users regardless of their active status.
+
+
+Scenario 3: Input Ben' or 1=1
+Observation: The script will execute a query with the input string Ben' or 1=1, causing the WHERE clause of the SQL query to always evaluate to true.
+Outcome: The SQL query returns all users because 1=1 is always true, bypassing the intended active = 1 condition.
